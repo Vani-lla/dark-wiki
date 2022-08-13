@@ -5,15 +5,38 @@
 }
 
 .mw-wiki-logo {
-    background-image: url("/images/logo-128.png") !important;
+    background-image: url("https://raw.githubusercontent.com/Vani-lla/dark-wiki/main/images/logo-128.png") !important;
+    filter: brightness(120%);
+}
+
+#accueil_2017_bandeau,
+.mw-parser-output #mp-2012-banner,
+.mw-parser-output #mp-2012-column-right-block-b {
+    background: none !important;
 }
 
 * {
     border-color: #bdc1c680 !important;
 }
 
-.mwe-math-element {
+.vector-search-box-input:focus,
+.vector-search-box-inner:hover .vector-search-box-input:focus {
+    border-color: var(--highlight-color) !important;
+    box-shadow: inset 0 0 0 1px var(--highlight-color) !important;
+}
+
+.mwe-math-element,
+.svg-Wikipedia_wordmark,
+.mw-collapsible-toggle,
+.mw-logo-container,
+#mw-sidebar-checkbox:not(:checked)~.mw-header #mw-sidebar-button:before,
+.mw-ui-icon-wikimedia-ellipsis:before,
+.mw-ui-icon-small:before {
     filter: invert(95%);
+}
+
+.main-page-responsive-columns div>p>img {
+    filter: grayscale(100%) brightness(30%);
 }
 
 body,
@@ -21,9 +44,28 @@ body,
 #content,
 table,
 #toc,
-.thumbinner,
 .wikitable>tr>th,
-.wikitable>*>tr>th {
+.wikitable>*>tr>th,
+.mw-parser-output .navbox,
+.mw-parser-output .navbox-subgroup,
+td,
+.catlinks,
+.mw-parser-output>div,
+.lang-list-container,
+.bookshelf .text,
+.app-badges .footer-sidebar-content,
+.mw-parser-output .main-box,
+.mw-parser-output .main-page-body>div:last-of-type,
+.mw-page-container,
+.nomobile,
+.nomobile div,
+.mw-parser-output .main-page-block-contents,
+#mp-upper>div,
+.mw-parser-output .hauptseite-box-content,
+.mw-parser-output .hauptseite-preview-wikidata,
+#accueil_2017_bandeau,
+.mw-parser-output #mp-2012-column-right-block-a,
+.mw-ui-icon-element:not(.disabled):hover {
     background-color: #202124 !important;
 }
 
@@ -32,28 +74,111 @@ table,
 #p-views li,
 #p-views a,
 .sidebar-title,
-.sidebar-heading {
+.sidebar-heading,
+.vector-search-box-input,
+.mw-parser-output .side-box,
+.thumbinner,
+th,
+.mw-ui-button,
+caption,
+.caption,
+pre,
+code,
+.mw-code,
+.pure-form input[type=search],
+.lang-list-button,
+.central-featured-lang .link-box>a:active,
+.central-featured-lang .link-box>a:focus,
+.vector-menu-tabs-legacy .selected,
+.mw-parser-output .main-page-block-heading,
+.mp-h2,
+.sidebar-toc,
+.mwe-popups .mwe-popups-container {
     background-color: #161719 !important;
 }
 
+.pure-button-primary-progressive {
+    background-color: var(--highlight-color) !important;
+}
+
+#searchInput {
+    outline-color: var(--highlight-color) !important;
+    box-shadow: inset 0 0 0 1px #bdc1c6 !important;
+}
+
+.lang-list-button {
+    outline-color: var(--highlight-color) !important;
+}
+
+.lang-list-button {
+    outline-color: #202124 !important;
+}
+
+#searchInput:focus {
+    box-shadow: inset 0 0 0 1px var(--highlight-color) !important;
+    border-color: var(--highlight-color) !important;
+
+}
+
+.pure-button-primary-progressive {
+    border-color: var(--highlight-color) !important;
+}
+
 a,
-.toctogglelabel {
+.toctogglelabel,
+.lang-list-button,
+.vector-toc-collapse-button,
+.vector-toc-uncollapse-button {
     color: var(--highlight-color) !important;
 }
 
 #content,
 .tocnumber,
-.wikitable {
+.wikitable,
+.vector-search-box-input,
+caption,
+pre,
+code,
+.mw-code,
+.infobox,
+table *:not(a),
+.lang-list-container li,
+.mw-parser-output .main-page-block-heading,
+div {
     color: #bdc1c6 !important;
 }
 
 .mw-list-item,
-h3 {
+h3,
+.mw-ui-button,
+.footer-sidebar-text,
+.other-project-tagline {
     color: #979A9E !important;
 }
 
 h1,
 h2,
-h4 {
+h4,
+h5 {
     color: white !important;
+}
+
+#main-page #main-page-footer h2,
+.ext-discussiontools-init-section {
+    background-image: linear-gradient(to right, #161719, #202124) !important;
+}
+
+#main-page #main-page-header,
+.mw-parser-output .main-top,
+.mw-parser-output .main-top-left {
+    background-image: none !important;
+    background-color: #161719 !important;
+}
+
+.sidebar-toc:after {
+    background: linear-gradient(#161719, #202124) !important;
+}
+
+.mwe-popups .mwe-popups-extract[dir='ltr']:after {
+    background-image: linear-gradient(to right,#16171900, #161719) !important;
 }
