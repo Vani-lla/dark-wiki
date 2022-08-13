@@ -1,0 +1,59 @@
+:root {
+    --highlight-color: #b8860b;
+    --highlight-color12: #b8860b1f;
+    --highlight-color30: #b8860b4d;
+}
+
+.mw-wiki-logo {
+    background-image: url("/images/logo-128.png") !important;
+}
+
+* {
+    border-color: #bdc1c680 !important;
+}
+
+.mwe-math-element {
+    filter: invert(95%);
+}
+
+body,
+#mw-head,
+#content,
+table,
+#toc,
+.thumbinner,
+.wikitable>tr>th,
+.wikitable>*>tr>th {
+    background-color: #202124 !important;
+}
+
+#ca-nstab-main,
+#ca-talk a,
+#p-views li,
+#p-views a,
+.sidebar-title,
+.sidebar-heading {
+    background-color: #161719 !important;
+}
+
+a,
+.toctogglelabel {
+    color: var(--highlight-color) !important;
+}
+
+#content,
+.tocnumber,
+.wikitable {
+    color: #bdc1c6 !important;
+}
+
+.mw-list-item,
+h3 {
+    color: #979A9E !important;
+}
+
+h1,
+h2,
+h4 {
+    color: white !important;
+}
